@@ -1,2 +1,2 @@
-local key = "key7sUmfJLyWZze"
-return key
+local realkey = {"key7sUmfJLyWZze"}
+return realkey
