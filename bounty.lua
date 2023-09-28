@@ -11,6 +11,7 @@ if not game:IsLoaded() then
 	GameLoadGui:Destroy();
 	task.wait(10);
 end;
+spawn(function()
 Nexus_Version = 104
 
 local FileName, Success, Error, Function = 'ic3w0lf22.Nexus.lua'
@@ -51,5 +52,7 @@ end
 if not Success and Error then
 	(messagebox or print)(('Nexus encountered an error while launching!\n\n%s'):format(Error), 'Roblox Account Manager', 0)
 end
-							
-loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+						end)
+spawn(function()
+	loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+end)
