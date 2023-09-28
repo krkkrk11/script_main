@@ -292,26 +292,26 @@ function toTargetP(CFgo)
 
 	return tweenfunc
 end
-while wait() do
-	pcall(function()
-		for i,v in pairs(game:GetService("Workspace").Characters:GetChildren()) do
-			for i2,v2 in pairs(NameP) do
-				repeat wait()
-					if game:GetService("Players")["LocalPlayer"].PlayerGui.Main.PvpDisabled.Visible == true then
-							local args = {
-								[1] = "EnablePvp"
-							}
-		
-							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-							repeat wait() until game:GetService("Players")["LocalPlayer"].PlayerGui.Main.PvpDisabled.Visible == false
-						if v.Name == v2 then
-							if  game:GetService("Players")["LocalPlayer"].PlayerGui.Main.PvpDisabled.Visible == false then
-								toTarget(v.HumanoidRootPart.CFrame*CFrame.new(0,0,-5))
+spawn(function()
+	while wait() do
+		pcall(function()
+			repeat wait()
+				for i,v in pairs(game:GetService("Workspace").Characters:GetChildren()) do
+					for i2,v2 in pairs(NameP) do
+						if game:GetService("Players")["LocalPlayer"].PlayerGui.Main.PvpDisabled.Visible == true then
+								local args = {
+									[1] = "EnablePvp"
+								}
+			
+								game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+								repeat wait() until game:GetService("Players")["LocalPlayer"].PlayerGui.Main.PvpDisabled.Visible == false
 							end
+						if v.Name == v2 then
+							toTarget(v.HumanoidRootPart.CFrame*CFrame.new(0,0,-5))
 						end
 					end
-				until game.Players.LocalPlayer.Character.Humanoid.Health == 0
-			end
-		end
-	end)
-end
+				end
+			until game.Players.LocalPlayer.Character.Humanoid.Health == 0
+		end)
+	end
+end)
