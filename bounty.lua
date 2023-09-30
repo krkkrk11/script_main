@@ -47,10 +47,8 @@ Fruits = {
 "Dragon Fruit" ,
 "Soul Fruit",
 "Leopard Fruit",
-"Fruit ",
-"Fruit"
 }
-Valuable = {"Kilo Fruit","Spin Fruit","Spring Fruit","Bomb Fruit","Smoke Fruit","Spike Fruit","Flame Fruit","Bird: Falcon Fruit","Ice Fruit","Sand Fruit","Dark Fruit","Diamond Fruit","Light Fruit","Rubber Fruit","Barrier Fruit","Magna Fruit","Quake Fruit","String Fruit","Portal Fruit","Blizzard Fruit","Revive Fruit","Chop Fruit, Dough Fruit","Shadow Fruit","Venom Fruit","Control Fruit","Dragon Fruit","Soul Fruit","Leopard Fruit","Fruit ","Fruit"} ------ it will stop the script if you got this fruit
+Valuable = {"Kilo Fruit","Spin Fruit","Spring Fruit","Bomb Fruit","Smoke Fruit","Spike Fruit","Flame Fruit","Bird: Falcon Fruit","Ice Fruit","Sand Fruit","Dark Fruit","Diamond Fruit","Light Fruit","Rubber Fruit","Barrier Fruit","Magna Fruit","Quake Fruit","String Fruit","Portal Fruit","Blizzard Fruit","Revive Fruit","Chop Fruit, Dough Fruit","Shadow Fruit","Venom Fruit","Control Fruit","Dragon Fruit","Soul Fruit","Leopard Fruit"} ------ it will stop the script if you got this fruit
 Webhook = "https://discord.com/api/webhooks/1145282565255725056/HnP8mTnR0icgkCWF6DdQzahuIIasSIVv79hR_kHwSxMcqBNUd_W3o7yoGHSivb1D7AoU" --------------------------------Optional
 Store = true  --------------------------------Auto Store after it got the fruit
 Safeplace = true ----------------------------- Safeplace 
