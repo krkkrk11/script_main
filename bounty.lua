@@ -11,5 +11,3 @@ if not game:IsLoaded() then
 	GameLoadGui:Destroy();
 	task.wait(10);
 end;
-
-loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
