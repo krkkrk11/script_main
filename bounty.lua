@@ -38,7 +38,7 @@ end)
 --function
 local id = game.PlaceId
 if id == 2753915549 then World1 = true; elseif id == 4442272183 then World2 = true; elseif id == 7449423635 then World3 = true; else game:Shutdown() end;
-
+wait(3)
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
 
 repeat wait()
@@ -183,6 +183,7 @@ local function toTarget(...)
 	if World3 then
 	    
 	end
+	--[[if World1 then
         if Distance >= DistanceSky1 and DistanceWhirlpool >= DistanceSky1 and DistanceSky1 <= DistanceSky2 and DistanceUnderwater >= DistanceSky1 then --DistanceSky1
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-4607.82275390625, 874.3905029296875, -1667.556884765625))
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4650.48095703125, 930.5040283203125, -1751.639404296875)
@@ -211,7 +212,7 @@ local function toTarget(...)
     	if Distance >= DistanceShipdoor and DistanceCafe >= DistanceShipdoor and DistanceShipdoor <= DistanceCafe then --DistanceShipdoor
     	    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-6508.55810546875, 89.03499603271484, -132.83953857421875))
     	end
-	end
+	end]]
     wait(1)
 	if Distance < 1000 then
 		Speed = 315
