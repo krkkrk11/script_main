@@ -12,5 +12,4 @@ if not game:IsLoaded() then
 	task.wait(10);
 end;
 
-_G.Keys = '130003214246'
-loadstring(game:HttpGet('https://raw.githubusercontent.com/x2Moodz/XenonV2/main/Loadder.lua'))();
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
