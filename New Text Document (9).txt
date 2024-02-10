@@ -1,2 +1,3 @@
-wait(30)
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fc715fb43902af268c335a5c7269be5e.lua"))()
+repeat wait() until game:IsLoaded()
+WebHook = "https://discord.com/api/webhooks/1145282572113416213/GPuoxIkKrMFimgu4NjpcABtMD5A7Hcav_luPHYz4RLezRXI_FQ40EyWAOzVdo1A5DPdW"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HardGameSs/PS99/main/sniper.lua"))()
